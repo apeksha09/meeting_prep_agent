@@ -1,0 +1,8 @@
+{
+  "id": "e9",
+  "from": "p13",
+  "to": ["p1", "p8", "p15"],
+  "subject": "Architecture council proposal: event ingestion path",
+  "sent_at": "2026-06-24T15:09:00",
+  "body": "I prepared two options for event ingestion: keep the current queue topology with targeted fixes, or move to a partitioned stream model. Option two improves long-term scaling but requires a larger migration window."
+}

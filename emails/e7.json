@@ -1,0 +1,8 @@
+{
+  "id": "e7",
+  "from": "p16",
+  "to": ["p17", "p3", "p12"],
+  "subject": "Model evaluation packet before deep dive",
+  "sent_at": "2026-06-24T09:05:00",
+  "body": "Sharing updated offline and online metrics for the ranking model. Precision improved in segment B, but latency regressed at p95. I marked potential causes tied to feature store lookups and would like engineering input."
+}

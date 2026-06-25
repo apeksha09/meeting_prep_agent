@@ -1,0 +1,8 @@
+{
+  "id": "e10",
+  "from": "p4",
+  "to": ["p6", "p10", "p19"],
+  "subject": "Reporting sync: metric definitions to finalize",
+  "sent_at": "2026-06-25T08:18:00",
+  "body": "Before today's analytics sync, we still need agreement on active account and expansion opportunity definitions. Once those are locked, Isabella can finalize dashboard copy and Michael can update monthly reporting templates."
+}
