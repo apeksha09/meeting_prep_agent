@@ -1,0 +1,10 @@
+{
+  "id": "p19",
+  "name": "Michael Green",
+  "email": "michael.green@company.com",
+  "title": "Business Analyst",
+  "department": "Analytics",
+  "bio": "Michael supports stakeholders with data analysis and reporting. 2 years at the company. Skilled at translating business questions into data queries.",
+  "relationship": "cross-functional partner",
+  "notes": "Works closely with Olivia on dashboards. Good person to ask about self-serve analytics adoption blockers."
+}

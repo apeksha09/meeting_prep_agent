@@ -1,0 +1,10 @@
+{
+  "id": "p16",
+  "name": "Harper Young",
+  "email": "harper.young@company.com",
+  "title": "Research Engineer",
+  "department": "ML/AI",
+  "bio": "Harper leads model research and experimentation. 2 years at the company. Background in NLP and applied ML. Strong communicator of complex technical tradeoffs.",
+  "relationship": "cross-functional partner",
+  "notes": "Running the model performance review. Flagged data drift as likely cause of accuracy drop — the labeling sprint was their recommendation."
+}

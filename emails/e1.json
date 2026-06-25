@@ -1,0 +1,8 @@
+{
+  "id": "e1",
+  "from": "p2",
+  "to": ["p1", "p11", "p12"],
+  "subject": "Draft Q3 roadmap themes for review",
+  "sent_at": "2026-06-21T09:14:00",
+  "body": "Hi team, sharing the draft roadmap themes ahead of Thursday's planning session. Please review the priority order for onboarding improvements, reporting exports, and API reliability. I added open questions in sections 3 and 5."
+}

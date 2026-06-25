@@ -1,0 +1,8 @@
+{
+  "id": "e5",
+  "from": "p8",
+  "to": ["p15", "p9"],
+  "subject": "Infra review agenda and incident trends",
+  "sent_at": "2026-06-23T10:10:00",
+  "body": "For this week's reliability review, I propose we focus on deploy rollback timing, alert noise reduction, and secrets rotation coverage. I attached the last 30-day incident trend summary in the shared drive."
+}

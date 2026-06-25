@@ -1,0 +1,13 @@
+{
+  "id": "m5",
+  "title": "Infrastructure Reliability Review",
+  "start": "2026-06-25T13:00:00",
+  "end": "2026-06-25T14:00:00",
+  "location": "Zoom",
+  "organizer": "p8",
+  "people_involved": ["p8", "p15", "p9"],
+  "agenda": "1. Review uptime metrics from last 30 days\n2. Post-mortem on last week's incident\n3. On-call rotation update\n4. Upcoming maintenance windows",
+  "recurrence": "monthly",
+  "notes_from_last": "SLA missed by 0.2% last month due to two overlapping incidents. Root cause was cascading cache failure. Mitigation plan agreed.",
+  "related_emails": []
+}

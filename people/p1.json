@@ -1,0 +1,10 @@
+{
+  "id": "p1",
+  "name": "Ava Patel",
+  "email": "ava.patel@company.com",
+  "title": "Engineering Manager",
+  "department": "Engineering",
+  "bio": "Ava has been Engineering Manager for 2 years, leading a team of 8. Previously a senior engineer at a fintech startup. Strong technical background, advocates for reducing tech debt and clear engineering standards.",
+  "relationship": "you (the user)",
+  "notes": "Your own profile — used to identify your meetings."
+}

@@ -1,0 +1,10 @@
+{
+  "id": "p4",
+  "name": "Liam Garcia",
+  "email": "liam.garcia@company.com",
+  "title": "Staff Software Engineer",
+  "department": "Engineering",
+  "bio": "Liam is a staff engineer with broad influence across teams. Joined 3 years ago. Owns key architectural decisions and often leads cross-team technical initiatives.",
+  "relationship": "direct report",
+  "notes": "Currently leading the database sharding investigation. Tends to push for long-term solutions over quick fixes — good to align on scope before meetings."
+}

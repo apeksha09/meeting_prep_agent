@@ -1,0 +1,13 @@
+{
+  "id": "m6",
+  "title": "Model Performance Deep Dive",
+  "start": "2026-06-27T14:00:00",
+  "end": "2026-06-27T15:00:00",
+  "location": "Zoom",
+  "organizer": "p16",
+  "people_involved": ["p16", "p17", "p3", "p12"],
+  "agenda": "1. Review model accuracy metrics\n2. Discuss recent regression in edge cases\n3. Proposed retraining schedule\n4. Data labeling backlog",
+  "recurrence": "bi-weekly",
+  "notes_from_last": "Model accuracy dropped 2% on long-tail queries. Team suspects data drift. Agreed to run a labeling sprint before next review.",
+  "related_emails": []
+}

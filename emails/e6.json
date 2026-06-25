@@ -1,0 +1,8 @@
+{
+  "id": "e6",
+  "from": "p6",
+  "to": ["p19", "p20"],
+  "subject": "Budget variance notes for monthly review",
+  "sent_at": "2026-06-23T13:22:00",
+  "body": "I finished variance analysis for tooling, contractors, and cloud spend. Cloud costs are 6 percent above forecast due to model training bursts. Michael and Abigail, please confirm whether we should rebaseline for next month."
+}

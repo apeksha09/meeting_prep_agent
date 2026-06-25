@@ -1,0 +1,10 @@
+{
+  "id": "p8",
+  "name": "Sophia Wilson",
+  "email": "sophia.wilson@company.com",
+  "title": "DevOps Engineer",
+  "department": "Infrastructure",
+  "bio": "Sophia owns CI/CD pipelines and infrastructure automation. Joined 2 years ago. Very detail-oriented, tracks every incident and SLA metric.",
+  "relationship": "cross-functional partner",
+  "notes": "Flagged the cascading cache failure root cause last month. Reliable — if she says something is a risk, take it seriously."
+}

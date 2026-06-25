@@ -1,0 +1,10 @@
+{
+  "id": "p18",
+  "name": "Evelyn Scott",
+  "email": "evelyn.scott@company.com",
+  "title": "Customer Success Manager",
+  "department": "Customer Success",
+  "bio": "Evelyn manages relationships with 15 enterprise accounts. 3 years at the company. Excellent at synthesizing customer feedback into actionable themes.",
+  "relationship": "cross-functional partner",
+  "notes": "Brings rich voice-of-customer data to meetings. The top themes she surfaces (export speed, permissions, bulk actions) should be taken seriously for roadmap input."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "m9",
+  "title": "Release Readiness Check",
+  "start": "2026-06-27T15:30:00",
+  "end": "2026-06-27T16:00:00",
+  "location": "Zoom",
+  "organizer": "p9",
+  "people_involved": ["p7", "p3", "p11", "p5"],
+  "agenda": "1. Go / no-go checklist review\n2. Outstanding bugs and blockers\n3. Rollback plan confirmation\n4. Communication plan for customers",
+  "recurrence": "per-release",
+  "notes_from_last": "Last release had a last-minute rollback due to uncaught regression. Team agreed to add integration test gate before go/no-go.",
+  "related_emails": []
+}

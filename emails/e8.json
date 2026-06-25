@@ -1,0 +1,8 @@
+{
+  "id": "e8",
+  "from": "p7",
+  "to": ["p3", "p11", "p5"],
+  "subject": "Release readiness blockers",
+  "sent_at": "2026-06-24T12:41:00",
+  "body": "Current blockers are flaky checkout tests and one unresolved accessibility bug in settings. If we can close both by Wednesday noon, I am comfortable with the Thursday release candidate signoff."
+}

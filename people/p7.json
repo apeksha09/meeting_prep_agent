@@ -1,0 +1,10 @@
+{
+  "id": "p7",
+  "name": "Ethan Brown",
+  "email": "ethan.brown@company.com",
+  "title": "QA Engineer",
+  "department": "Engineering",
+  "bio": "Ethan leads QA for the engineering team. 3 years at the company. Owns test strategy, release gates, and regression testing. Strong advocate for quality over speed.",
+  "relationship": "direct report",
+  "notes": "Was vocal after the last release rollback — pushed for the integration test gate addition. Important voice in release readiness discussions."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "m3",
+  "title": "Feature Discovery Workshop",
+  "start": "2026-06-27T09:00:00",
+  "end": "2026-06-27T10:30:00",
+  "location": "Design Studio / Zoom",
+  "organizer": "p5",
+  "people_involved": ["p2", "p5", "p10", "p14"],
+  "agenda": "1. Walk through first-run activation user journey\n2. Walk through returning user journey\n3. Identify assumptions to validate with customer interviews\n4. Agree on next research steps",
+  "recurrence": "one-time",
+  "notes_from_last": null,
+  "related_emails": ["e3"]
+}

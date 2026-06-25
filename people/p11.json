@@ -1,0 +1,10 @@
+{
+  "id": "p11",
+  "name": "James Thompson",
+  "email": "james.thompson@company.com",
+  "title": "Frontend Engineer",
+  "department": "Engineering",
+  "bio": "James is the senior frontend engineer owning the core web app. 2.5 years at the company. Strong React expertise. Tends to flag UX edge cases early.",
+  "relationship": "direct report",
+  "notes": "Currently working on the reporting exports frontend. Was asked by Ava to add risk notes to the roadmap top items before the planning session."
+}

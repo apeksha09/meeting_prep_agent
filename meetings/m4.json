@@ -1,0 +1,13 @@
+{
+  "id": "m4",
+  "title": "Monthly Budget Review",
+  "start": "2026-06-26T13:00:00",
+  "end": "2026-06-26T14:00:00",
+  "location": "Boardroom",
+  "organizer": "p20",
+  "people_involved": ["p6", "p19", "p20"],
+  "agenda": "1. Review June actuals vs budget\n2. Forecast adjustments for Q3\n3. Headcount spend\n4. Any urgent reallocation requests",
+  "recurrence": "monthly",
+  "notes_from_last": "May came in 5% under budget on headcount due to delayed hires. Engineering infra spend was 12% over due to unplanned scaling events.",
+  "related_emails": []
+}

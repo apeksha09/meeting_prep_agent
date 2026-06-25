@@ -1,0 +1,10 @@
+{
+  "id": "p15",
+  "name": "Henry Allen",
+  "email": "henry.allen@company.com",
+  "title": "Site Reliability Engineer",
+  "department": "Infrastructure",
+  "bio": "Henry owns SRE practices and on-call processes. 3 years at the company. Manages incident response and post-mortem culture.",
+  "relationship": "cross-functional partner",
+  "notes": "Recently dealt with the cascading cache failure. Good person to lean on for honest assessments of system reliability risks."
+}

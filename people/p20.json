@@ -1,0 +1,10 @@
+{
+  "id": "p20",
+  "name": "Abigail Adams",
+  "email": "abigail.adams@company.com",
+  "title": "Finance Partner",
+  "department": "Finance",
+  "bio": "Abigail is the finance business partner for engineering and product. 4 years at the company. Owns budget tracking, headcount planning, and forecast reviews.",
+  "relationship": "cross-functional partner",
+  "notes": "Very numbers-driven — comes to budget reviews with actuals already prepared. If engineering spend is over, she'll know before you do. Come with explanations."
+}

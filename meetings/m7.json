@@ -1,0 +1,13 @@
+{
+  "id": "m7",
+  "title": "Customer Feedback Synthesis",
+  "start": "2026-06-25T16:00:00",
+  "end": "2026-06-25T16:45:00",
+  "location": "Zoom",
+  "organizer": "p18",
+  "people_involved": ["p18", "p2", "p14"],
+  "agenda": "1. Themes from last month's customer interviews\n2. Support ticket patterns\n3. Top pain points to feed into roadmap\n4. Prioritization recommendations",
+  "recurrence": "monthly",
+  "notes_from_last": "Top themes last cycle: slow export times, confusing permission model, lack of bulk actions. Noah to confirm which items are already on roadmap.",
+  "related_emails": []
+}

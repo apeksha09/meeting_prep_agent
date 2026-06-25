@@ -1,0 +1,10 @@
+{
+  "id": "p17",
+  "name": "Elijah King",
+  "email": "elijah.king@company.com",
+  "title": "Machine Learning Engineer",
+  "department": "ML/AI",
+  "bio": "Elijah implements and deploys ML models into production. 1.5 years at the company. Focused on model serving infrastructure and latency optimization.",
+  "relationship": "cross-functional partner",
+  "notes": "Key implementer on the retraining pipeline. Good to ask about production constraints when discussing the retraining schedule."
+}

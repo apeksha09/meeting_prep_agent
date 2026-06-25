@@ -1,0 +1,73 @@
+{
+  "meetings": [
+    {
+      "id": "mtg-001",
+      "title": "Q3 Strategy Review",
+      "start": "2026-06-25T10:00:00",
+      "end": "2026-06-25T11:00:00",
+      "location": "Conference Room A / Zoom",
+      "organizer": "sarah.chen@company.com",
+      "attendees": [
+        "sarah.chen@company.com",
+        "james.okafor@company.com",
+        "priya.nair@company.com",
+        "you@company.com"
+      ],
+      "agenda": "1. Review Q2 performance vs targets\n2. Align on Q3 priorities\n3. Budget reallocation discussion\n4. Action items and owners",
+      "linked_docs": ["Q2 Performance Report", "Q3 Draft OKRs"],
+      "recurrence": "monthly",
+      "notes_from_last": "Q2 revenue came in 8% below target. Team agreed to focus on enterprise segment. Follow-up: James to share updated pipeline report by EOW."
+    },
+    {
+      "id": "mtg-002",
+      "title": "1:1 with James Okafor",
+      "start": "2026-06-25T14:00:00",
+      "end": "2026-06-25T14:30:00",
+      "location": "Zoom",
+      "organizer": "you@company.com",
+      "attendees": [
+        "james.okafor@company.com",
+        "you@company.com"
+      ],
+      "agenda": "Weekly sync — pipeline updates, blockers, career check-in",
+      "linked_docs": [],
+      "recurrence": "weekly",
+      "notes_from_last": "James mentioned he's feeling stretched across two projects. Discussed potential to bring on a contractor. He committed to closing 2 deals this month."
+    },
+    {
+      "id": "mtg-003",
+      "title": "Vendor Demo — DataSync Pro",
+      "start": "2026-06-25T15:30:00",
+      "end": "2026-06-25T16:30:00",
+      "location": "Zoom",
+      "organizer": "vendor@datasyncpro.com",
+      "attendees": [
+        "vendor@datasyncpro.com",
+        "alex.kumar@datasyncpro.com",
+        "priya.nair@company.com",
+        "you@company.com"
+      ],
+      "agenda": "Product walkthrough of DataSync Pro's ETL pipeline features. Focus on real-time sync and compliance tooling.",
+      "linked_docs": ["DataSync Pro Proposal", "Current ETL Pain Points Doc"],
+      "recurrence": "one-time",
+      "notes_from_last": null
+    },
+    {
+      "id": "mtg-004",
+      "title": "Engineering Sprint Planning",
+      "start": "2026-06-26T09:00:00",
+      "end": "2026-06-26T10:00:00",
+      "location": "Conference Room B",
+      "organizer": "priya.nair@company.com",
+      "attendees": [
+        "priya.nair@company.com",
+        "dev.team@company.com",
+        "you@company.com"
+      ],
+      "agenda": "1. Review completed stories from last sprint\n2. Groom and point new stories\n3. Assign sprint capacity\n4. Flag dependencies and risks",
+      "linked_docs": ["Sprint 24 Backlog", "Tech Debt Tracker"],
+      "recurrence": "bi-weekly",
+      "notes_from_last": "Sprint 23 completed 18/22 story points. 4 stories rolled over due to auth service dependency. Priya flagged Redis migration risk."
+    }
+  ]
+}

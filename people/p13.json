@@ -1,0 +1,10 @@
+{
+  "id": "p13",
+  "name": "Benjamin Walker",
+  "email": "benjamin.walker@company.com",
+  "title": "Solutions Architect",
+  "department": "Engineering",
+  "bio": "Benjamin is the solutions architect leading key platform decisions. 5 years at the company. Runs the Architecture Decision Council. Very process-oriented.",
+  "relationship": "senior peer",
+  "notes": "Chairs the ADR review process. Has strong views on the database sharding proposal — expect him to push for more load test data before committing."
+}

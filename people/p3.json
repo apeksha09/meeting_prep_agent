@@ -1,0 +1,10 @@
+{
+  "id": "p3",
+  "name": "Mia Chen",
+  "email": "mia.chen@company.com",
+  "title": "Senior Software Engineer",
+  "department": "Engineering",
+  "bio": "Mia is a senior engineer with 5 years at the company. Deep expertise in backend systems and APIs. Known for thorough code reviews and strong opinions on reliability.",
+  "relationship": "direct report",
+  "notes": "Recently took on tech lead responsibilities for the API reliability initiative. Can be cautious about timelines — good to double-check estimates."
+}

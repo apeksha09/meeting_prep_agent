@@ -1,0 +1,13 @@
+{
+  "id": "m8",
+  "title": "Architecture Decision Council",
+  "start": "2026-06-26T15:00:00",
+  "end": "2026-06-26T16:00:00",
+  "location": "Conference Room A",
+  "organizer": "p13",
+  "people_involved": ["p13", "p1", "p8", "p15"],
+  "agenda": "1. Review open ADRs (Architecture Decision Records)\n2. Vote on database sharding proposal\n3. API versioning strategy\n4. Any new proposals to table",
+  "recurrence": "monthly",
+  "notes_from_last": "Sharding proposal was tabled pending load test results. API versioning discussion split the group — needs more data on client impact.",
+  "related_emails": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "p10",
+  "name": "Isabella Clark",
+  "email": "isabella.clark@company.com",
+  "title": "Technical Writer",
+  "department": "Product",
+  "bio": "Isabella manages all product documentation and in-app help content. Joined 1.5 years ago. Works closely with design and PM on feature launches.",
+  "relationship": "cross-functional partner",
+  "notes": "Key stakeholder for onboarding copy changes. Good to loop in early on any content decisions to avoid last-minute doc scrambles."
+}

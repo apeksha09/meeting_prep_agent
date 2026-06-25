@@ -1,0 +1,10 @@
+{
+  "id": "p9",
+  "name": "Lucas Martinez",
+  "email": "lucas.martinez@company.com",
+  "title": "Security Engineer",
+  "department": "Infrastructure",
+  "bio": "Lucas leads security engineering. 4 years at the company. Runs pen tests, manages the vulnerability backlog, and owns SOC2 compliance readiness.",
+  "relationship": "cross-functional partner",
+  "notes": "Currently tracking 3 open medium-severity findings from the pen test. SOC2 audit is coming in July — he may escalate if timelines slip."
+}

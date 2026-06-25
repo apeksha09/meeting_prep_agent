@@ -1,0 +1,13 @@
+{
+  "id": "m2",
+  "title": "Sprint Retrospective",
+  "start": "2026-06-26T14:00:00",
+  "end": "2026-06-26T15:00:00",
+  "location": "Zoom",
+  "organizer": "p1",
+  "people_involved": ["p1", "p3", "p4", "p7"],
+  "agenda": "1. What went well\n2. What didn't go well\n3. Action items for next sprint\n4. Process improvements",
+  "recurrence": "bi-weekly",
+  "notes_from_last": "Last retro flagged too many context switches and unclear ticket definitions. Team agreed on a 'definition of ready' checklist. Check adoption.",
+  "related_emails": []
+}

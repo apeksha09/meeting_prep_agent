@@ -1,0 +1,8 @@
+{
+  "id": "e3",
+  "from": "p5",
+  "to": ["p2", "p10", "p14"],
+  "subject": "Workshop prep: user journey artifacts",
+  "sent_at": "2026-06-22T08:45:00",
+  "body": "I uploaded two user journey variants for the feature discovery workshop. One focuses on first-run activation, the other on returning users. Please comment on where we should validate assumptions with customer interviews."
+}

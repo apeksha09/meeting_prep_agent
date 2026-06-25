@@ -1,0 +1,10 @@
+{
+  "id": "p12",
+  "name": "Charlotte Lewis",
+  "email": "charlotte.lewis@company.com",
+  "title": "Backend Engineer",
+  "department": "Engineering",
+  "bio": "Charlotte is a backend engineer specializing in data pipelines and integrations. 3 years at the company. Reliable executor, rarely misses deadlines.",
+  "relationship": "direct report",
+  "notes": "Also asked to add risk notes before the Q3 roadmap session. Good to check she's had time to review the draft themes."
+}

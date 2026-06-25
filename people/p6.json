@@ -1,0 +1,10 @@
+{
+  "id": "p6",
+  "name": "Olivia Nguyen",
+  "email": "olivia.nguyen@company.com",
+  "title": "Data Analyst",
+  "department": "Analytics",
+  "bio": "Olivia owns the company's core analytics and dashboards. Joined 1 year ago. Background in business intelligence. Works closely with finance and leadership on KPI tracking.",
+  "relationship": "cross-functional partner",
+  "notes": "Has flagged pipeline reliability issues recently. Good source of truth for metrics — if numbers are in question, she's the person to ask."
+}
