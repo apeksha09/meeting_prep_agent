@@ -28,6 +28,10 @@ set ANTHROPIC_API_KEY=your-key-here      # Windows
 
 # 4. Run the agent
 python agent.py
+
+# 5. Run the dashboard
+python dashboard.py
+# Open http://127.0.0.1:5000
 ```
 
 ## Configuration
@@ -36,6 +40,12 @@ In `agent.py`:
 - `MY_PERSON_ID` — set to your person ID in `people/` (default: `"p1"` = Ava Patel)
 - `MINUTES_AHEAD` — how far ahead to look for meetings (default: 120 minutes)
 - `simulated_now` — change this to test different times
+
+## Dashboard
+
+- **Calendar tab**: displays all meetings on a calendar
+- **Run Agent button**: generates briefings for upcoming meetings
+- **Clickable meetings**: meetings with generated briefings become clickable and open the briefing view
 
 ## Data structure
 
