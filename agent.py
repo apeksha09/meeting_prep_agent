@@ -18,7 +18,7 @@ PEOPLE_DIR = BASE_DIR / "people"
 EMAILS_DIR = BASE_DIR / "emails"
 
 MY_PERSON_ID = "p1"       # change to match your person ID in people/
-MINUTES_AHEAD = 120        # prep meetings starting within this window
+MINUTES_AHEAD = 12000        # prep meetings starting within this window
 
 
 def load_all(directory: Path) -> dict:
