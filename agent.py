@@ -8,6 +8,9 @@ import os
 from datetime import datetime, timedelta
 from pathlib import Path
 import anthropic
+from dotenv import load_dotenv
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).parent
 MEETINGS_DIR = BASE_DIR / "meetings"
@@ -165,5 +168,5 @@ def run(now: datetime = None):
 
 if __name__ == "__main__":
     # Simulates running at 9:30 AM on June 25 — picks up meetings starting before 11:30 AM
-    simulated_now = datetime(2026, 6, 25, 9, 30, 0)
+    simulated_now = datetime(2026, 6, 26, 9, 0, 0)
     run(now=simulated_now)
