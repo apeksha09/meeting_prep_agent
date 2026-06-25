@@ -5,6 +5,7 @@ Reads meetings/, people/, and emails/ data, generates a pre-meeting briefing via
 
 import json
 import os
+import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 import anthropic
@@ -12,17 +13,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Fix Windows terminal encoding
+if sys.stdout.encoding != "utf-8":
+    sys.stdout.reconfigure(encoding="utf-8")
+
 BASE_DIR = Path(__file__).parent
 MEETINGS_DIR = BASE_DIR / "meetings"
 PEOPLE_DIR = BASE_DIR / "people"
 EMAILS_DIR = BASE_DIR / "emails"
 
-MY_PERSON_ID = "p1"       # change to match your person ID in people/
-MINUTES_AHEAD = 12000        # prep meetings starting within this window
+MY_PERSON_ID = "p1"
+MINUTES_AHEAD = 12000
 
 
 def load_all(directory: Path) -> dict:
-    """Load all JSON files from a directory, keyed by id."""
     records = {}
     for f in sorted(directory.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
@@ -47,7 +51,6 @@ def build_meeting_context(meeting: dict, people: dict, emails: dict) -> str:
     end = datetime.fromisoformat(meeting["end"])
     duration_min = int((end - start).total_seconds() / 60)
 
-    # Attendee profiles (skip yourself)
     attendee_profiles = []
     for pid in meeting.get("people_involved", []):
         if pid == MY_PERSON_ID:
@@ -65,7 +68,6 @@ def build_meeting_context(meeting: dict, people: dict, emails: dict) -> str:
 
     attendees_text = "\n".join(attendee_profiles) if attendee_profiles else "No attendee profiles found."
 
-    # Related emails
     related_email_ids = meeting.get("related_emails", [])
     email_snippets = []
     for eid in related_email_ids:
@@ -107,14 +109,18 @@ RELATED EMAILS:
 def generate_briefing(meeting_context: str, client: anthropic.Anthropic) -> str:
     prompt = f"""You are a personal executive assistant. Based on the meeting details below, generate a concise pre-meeting briefing.
 
-The briefing should include:
-1. **Meeting Summary** — one sentence on the purpose and what's at stake
-2. **Who's in the Room** — key facts about each attendee and how to approach them
-3. **What to Know** — relevant context, history, and key points from related emails
-4. **Suggested Talking Points** — 3–5 concrete things to raise or be ready to discuss
-5. **Watch Out For** — any risks, sensitivities, or dynamics to be aware of
+Return ONLY a JSON object with these exact keys:
+{{
+  "summary": "one sentence on the purpose and what's at stake",
+  "who_is_in_the_room": [
+    {{"name": "Person Name", "role": "their title", "approach": "how to approach them"}}
+  ],
+  "what_to_know": ["bullet 1", "bullet 2", "bullet 3"],
+  "talking_points": ["point 1", "point 2", "point 3", "point 4"],
+  "watch_out_for": ["risk 1", "risk 2"]
+}}
 
-Keep it tight and actionable. No fluff.
+No markdown, no extra text, just the JSON object.
 
 ---
 {meeting_context}
@@ -125,15 +131,18 @@ Keep it tight and actionable. No fluff.
         max_tokens=1024,
         messages=[{"role": "user", "content": prompt}]
     )
-    return message.content[0].text
+    text = message.content[0].text.strip()
+    # Strip markdown code fences if present
+    if text.startswith("```"):
+        text = text.split("```")[1]
+        if text.startswith("json"):
+            text = text[4:]
+    return json.loads(text)
 
 
-def run(now: datetime = None):
+def get_briefings(now: datetime = None) -> list:
     if now is None:
         now = datetime.now()
-
-    print(f"Meeting Prep Agent — checking next {MINUTES_AHEAD} minutes of meetings")
-    print(f"Current time: {now.strftime('%A %B %d, %Y at %I:%M %p')}\n")
 
     meetings = load_all(MEETINGS_DIR)
     people = load_all(PEOPLE_DIR)
@@ -141,32 +150,55 @@ def run(now: datetime = None):
 
     upcoming = get_upcoming_meetings(meetings, now, MINUTES_AHEAD)
 
-    if not upcoming:
-        print("No upcoming meetings in the window. Enjoy the focus time.")
-        return
-
-    print(f"Found {len(upcoming)} upcoming meeting(s).\n{'='*60}\n")
-
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
-        raise ValueError("ANTHROPIC_API_KEY environment variable not set.")
+        raise ValueError("ANTHROPIC_API_KEY not set.")
     client = anthropic.Anthropic(api_key=api_key)
 
+    results = []
     for meeting in upcoming:
         start = datetime.fromisoformat(meeting["start"])
+        end = datetime.fromisoformat(meeting["end"])
         minutes_until = int((start - now).total_seconds() / 60)
 
-        print(f"BRIEFING: {meeting['title']}")
-        print(f"Starts in {minutes_until} minutes\n")
+        attendees = []
+        for pid in meeting.get("people_involved", []):
+            if pid == MY_PERSON_ID:
+                continue
+            person = people.get(pid)
+            if person:
+                attendees.append({
+                    "name": person["name"],
+                    "title": person["title"],
+                    "department": person.get("department", ""),
+                    "email": person.get("email", ""),
+                    "notes": person.get("notes", ""),
+                })
 
         context = build_meeting_context(meeting, people, emails)
         briefing = generate_briefing(context, client)
 
-        print(briefing)
-        print(f"\n{'='*60}\n")
+        results.append({
+            "id": meeting["id"],
+            "title": meeting["title"],
+            "start": start.strftime("%I:%M %p"),
+            "date": start.strftime("%A, %B %d"),
+            "duration": int((end - start).total_seconds() / 60),
+            "location": meeting.get("location", "TBD"),
+            "recurrence": meeting.get("recurrence", ""),
+            "minutes_until": minutes_until,
+            "attendees": attendees,
+            "agenda": meeting.get("agenda", ""),
+            "briefing": briefing,
+        })
+
+    return results
 
 
 if __name__ == "__main__":
-    # Simulates running at 9:30 AM on June 25 — picks up meetings starting before 11:30 AM
     simulated_now = datetime(2026, 6, 26, 9, 0, 0)
-    run(now=simulated_now)
+    briefings = get_briefings(now=simulated_now)
+    for b in briefings:
+        print(f"\n{'='*60}")
+        print(f"BRIEFING: {b['title']} at {b['start']}")
+        print(json.dumps(b["briefing"], indent=2, ensure_ascii=False))
