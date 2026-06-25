@@ -17,8 +17,22 @@ function activateTab(targetId) {
 }
 
 function renderBriefing(detail) {
+  const briefingEl = document.getElementById("briefing-content");
+  let rendered = detail.briefing;
+
+  if (window.marked) {
+    marked.setOptions({ gfm: true, breaks: true });
+    rendered = marked.parse(detail.briefing || "");
+  }
+
+  if (window.DOMPurify) {
+    rendered = DOMPurify.sanitize(rendered);
+    briefingEl.innerHTML = rendered;
+  } else {
+    briefingEl.textContent = detail.briefing;
+  }
+
   document.getElementById("briefing-title").textContent = detail.title;
-  document.getElementById("briefing-content").textContent = detail.briefing;
   activateTab("panel-briefings");
 }
 
