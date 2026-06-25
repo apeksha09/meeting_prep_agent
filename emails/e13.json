@@ -1,0 +1,8 @@
+{
+  "id": "e13",
+  "from": "p2",
+  "to": ["p1", "p3", "p4", "p5"],
+  "subject": "Customer impact summary before Follow-up #1",
+  "sent_at": "2026-06-26T08:40:00",
+  "body": "Support tagged 47 tickets linked to session drops this month. Most affected users are in slower network regions and abandon at payment review. Please treat this as priority one for the next release train."
+}

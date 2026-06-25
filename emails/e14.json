@@ -1,0 +1,8 @@
+{
+  "id": "e14",
+  "from": "p4",
+  "to": ["p1", "p2", "p3", "p5"],
+  "subject": "Root cause notes for Follow-up #2",
+  "sent_at": "2026-06-27T11:03:00",
+  "body": "I traced the failures to a race between session refresh and cart state reconciliation. Under retry, stale cart snapshots can overwrite valid tokens. Proposed approach: sequence refresh completion before cart write-back and add idempotency guards."
+}

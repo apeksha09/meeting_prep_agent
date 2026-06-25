@@ -1,0 +1,8 @@
+{
+  "id": "e11",
+  "from": "p1",
+  "to": ["p2", "p3", "p4", "p5"],
+  "subject": "Action required: recurring checkout session drop bug",
+  "sent_at": "2026-06-25T09:05:00",
+  "body": "Team, this bug has resurfaced in three consecutive sprints and is impacting conversion. I scheduled a triage kickoff so we can align on ownership, scope, and immediate containment. Please come prepared with logs, user reports, and UI flow notes."
+}

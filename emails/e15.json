@@ -1,0 +1,8 @@
+{
+  "id": "e15",
+  "from": "p5",
+  "to": ["p1", "p2", "p3", "p4"],
+  "subject": "UX considerations for patch rollout",
+  "sent_at": "2026-06-27T15:26:00",
+  "body": "If token refresh stalls, users currently see a generic error modal without recovery guidance. I drafted a clearer inline retry state and messaging that preserves cart context. Happy to review in Follow-up #3 before implementation."
+}

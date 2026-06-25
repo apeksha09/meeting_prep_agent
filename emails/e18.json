@@ -1,0 +1,8 @@
+{
+  "id": "e18",
+  "from": "p2",
+  "to": ["p1", "p3", "p4", "p5"],
+  "subject": "Post-release follow-up and next steps",
+  "sent_at": "2026-07-01T10:02:00",
+  "body": "Initial rollout metrics are promising: checkout completion recovered and support tickets are down. Let's keep monitoring through Friday and prepare a short incident retrospective on why this lingered across multiple sprints."
+}

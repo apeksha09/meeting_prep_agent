@@ -1,0 +1,8 @@
+{
+  "id": "e17",
+  "from": "p3",
+  "to": ["p1", "p2", "p4", "p5"],
+  "subject": "Pre-release validation results",
+  "sent_at": "2026-06-29T13:07:00",
+  "body": "Patch passed regression and soak testing in staging with no session drops over 12 hours. We saw a 31 percent decrease in refresh failures under simulated packet loss. Recommending progressive rollout starting at 10 percent traffic."
+}

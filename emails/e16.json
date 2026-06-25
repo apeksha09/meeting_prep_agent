@@ -1,0 +1,8 @@
+{
+  "id": "e16",
+  "from": "p1",
+  "to": ["p2", "p3", "p4", "p5"],
+  "subject": "Decisions from Follow-up #3",
+  "sent_at": "2026-06-28T09:18:00",
+  "body": "Thanks all. We agreed to ship the sequencing fix behind a feature flag, add p95 refresh latency alerts, and include Emma's revised retry state. Mia and Liam own implementation, Noah owns release comms, and Emma owns UX acceptance criteria."
+}

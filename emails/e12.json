@@ -1,0 +1,8 @@
+{
+  "id": "e12",
+  "from": "p3",
+  "to": ["p1", "p2", "p4", "p5"],
+  "subject": "Re: Action required: recurring checkout session drop bug",
+  "sent_at": "2026-06-25T10:12:00",
+  "body": "I reviewed last week's traces and can reliably reproduce the issue when users idle after adding discounts. It looks tied to token refresh timing under high latency. I will bring a minimal repro and candidate fixes to the kickoff."
+}
